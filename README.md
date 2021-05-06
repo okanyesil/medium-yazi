@@ -1,0 +1,1 @@
+# Medium yazısında kullandığım kodlar
