@@ -1,0 +1,41 @@
+<div class="row">
+    <div class="col-md-4">
+        <ul class="list-group mt-50">
+            <li class="list-group-item" (click)="getReportByCountryName('Turkey')">Türkiye</li>
+            <li class="list-group-item" (click)="getReportByCountryName('Russia')">Rusya</li>
+            <li class="list-group-item" (click)="getReportByCountryName('Italy')">İtalya</li>
+            <li class="list-group-item" (click)="getReportByCountryName('India')">Hindistan</li>
+          </ul>
+    </div>
+    <div class="col-md-8">
+        <div class="fill">
+            <div class="text">
+                {{covidInfo.country}} COVİD-19 TABLOSU
+            </div>
+            <div class="container">
+                <div class="today">
+                    BUGÜN
+                </div>
+                <div class="root">
+                    <span class="blue"><h5>TOPLAM VAKA</h5></span>
+                    <span class="grey">{{covidInfo.totalCases}}</span>
+                </div>
+    
+                <div class="root">
+                    <span class="blue"><h5>VAKA SAYISI</h5></span>
+                    <span class="grey">{{covidInfo.newCases}}</span>
+                </div>
+                <div class="root">
+                    <span class="blue"><h5>HASTA SAYISI</h5></span>
+                    <span class="grey">{{covidInfo.activeCases}}</span>
+                </div>
+                <div class="root">
+                    <span class="blue"><h5>VEFAT SAYISI</h5></span>
+                    <span class="grey">{{covidInfo.newDeaths}}</span>
+                </div>
+            
+            </div>
+            
+        </div>
+    </div>
+</div>
