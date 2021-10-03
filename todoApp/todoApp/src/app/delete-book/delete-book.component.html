@@ -1,0 +1,6 @@
+<form [formGroup]="deleteForm">
+    ID: <input type="text" class="form-control" formControlName="bookId" disabled="true"/>
+    Book Name: <input type="text" class="form-control" formControlName="bookName"/>
+    Author: <input type="text" class="form-control" formControlName="author"/>
+    <button  class="btn btn-outline-danger" (click)="delete()">Delete</button>
+ </form>

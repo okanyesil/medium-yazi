@@ -1,0 +1,22 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Book ID</th>
+        <th scope="col">Book Name</th>
+        <th scope="col">Author</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let book of bookList$ | async">
+        <th scope="row">{{book.bookId}}</th>
+        <td>{{book.bookName}}</td>
+        <td>{{book.author}}</td>
+        <td>
+            <button [routerLink]="['delete-book', book.bookId]" class="btn btn-outline-danger">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button [routerLink]="['/add-book']"  class="btn btn-outline-success">ADD NEW BOOK</button>

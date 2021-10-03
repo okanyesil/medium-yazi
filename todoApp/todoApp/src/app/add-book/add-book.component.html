@@ -1,0 +1,6 @@
+<form [formGroup]="bookAdd">
+ID: <input type="text" class="form-control" formControlName="bookId"  />
+Book Name: <input type="text" class="form-control" formControlName="bookName"/>
+Author: <input type="text" class="form-control" formControlName="author" />
+<button  (click)="saveBook()" class="btn btn-outline-primary">Save</button>
+</form>
